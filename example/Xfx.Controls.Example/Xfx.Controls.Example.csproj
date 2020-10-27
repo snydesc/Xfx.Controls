@@ -1,27 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>netstandard1.3</TargetFramework>
-    </PropertyGroup>
-	<ItemGroup>
+   <PropertyGroup>
+      <TargetFramework>netstandard1.3</TargetFramework>
+   </PropertyGroup>
+   <ItemGroup>
       <ProjectReference Include="..\..\src\Xfx.Controls\Xfx.Controls.csproj" />
-  </ItemGroup>
-	<ItemGroup>
-	  <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
-	    <DependentUpon>*.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="RootPage.xaml.cs">
-	    <DependentUpon>*.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Features\Controls\ControlsPage.xaml.cs">
-	    <DependentUpon>*.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-	<ItemGroup>
-	  <PackageReference Include="Xamarin.Forms" Version="3.5.0.129452" />
-	</ItemGroup>
-	<!--<ItemGroup>
-    --><!-- https://bugzilla.xamarin.com/show_bug.cgi?id=55591 --><!--
+   </ItemGroup>
+   <ItemGroup>
+      <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+         <DependentUpon>*.xaml</DependentUpon>
+      </Compile>
+      <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="RootPage.xaml.cs">
+         <DependentUpon>*.xaml</DependentUpon>
+      </Compile>
+      <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Features\Controls\ControlsPage.xaml.cs">
+         <DependentUpon>*.xaml</DependentUpon>
+      </Compile>
+   </ItemGroup>
+   <ItemGroup>
+      <PackageReference Include="Xamarin.Forms" Version="3.6.0.709228" />
+   </ItemGroup>
+   <!--<ItemGroup>
+    -->
+   <!-- https://bugzilla.xamarin.com/show_bug.cgi?id=55591 -->
+   <!--
     <None Remove="**\*.xaml" />
     
     <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
